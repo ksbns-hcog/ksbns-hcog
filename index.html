@@ -4,58 +4,74 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2027 한국뇌신경과학회 고등인지분과 동계 워크샵</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-white text-gray-900">
 
-<header>
-  <h1>2027 한국뇌신경과학회 고등인지분과 동계 워크샵</h1>
-  <p class="dates">2027년 1월 24일(일) &ndash; 25일(월)</p>
+<header class="relative overflow-hidden bg-gradient-to-br from-indigo-700 via-indigo-600 to-sky-500 text-white">
+  <div class="max-w-4xl mx-auto px-6 py-20 sm:py-28 text-center">
+    <p class="text-sm sm:text-base font-medium tracking-wide text-indigo-100 uppercase">한국뇌신경과학회 고등인지분과</p>
+    <h1 class="mt-3 text-3xl sm:text-5xl font-black tracking-tight">2027 동계 워크샵</h1>
+    <p class="mt-4 text-lg sm:text-xl text-indigo-50">2027년 1월 24일(일) &ndash; 25일(월)</p>
+  </div>
 </header>
 
-<nav>
-  <a href="#overview">개요</a>
-  <a href="#submission">초록 제출</a>
-  <a href="#registration">등록</a>
-  <a href="#venue">장소</a>
-  <a href="#gallery">사진</a>
+<nav class="sticky top-0 z-10 bg-white/90 backdrop-blur border-b border-gray-200">
+  <div class="max-w-4xl mx-auto px-6 flex flex-wrap justify-center gap-6 py-3 text-sm font-medium">
+    <a href="#overview" class="text-gray-600 hover:text-indigo-600">개요</a>
+    <a href="#submission" class="text-gray-600 hover:text-indigo-600">초록 제출</a>
+    <a href="#registration" class="text-gray-600 hover:text-indigo-600">등록</a>
+    <a href="#venue" class="text-gray-600 hover:text-indigo-600">장소</a>
+    <a href="#gallery" class="text-gray-600 hover:text-indigo-600">사진</a>
+  </div>
 </nav>
 
-<main>
+<main class="max-w-4xl mx-auto px-6">
 
-  <section id="overview">
-    <h2>개요</h2>
-    <p>[TBD: 워크샵 소개 문구를 작성해주세요.]</p>
+  <section id="overview" class="py-16">
+    <h2 class="text-2xl font-bold text-indigo-700 mb-4">개요</h2>
+    <p class="text-gray-700 leading-relaxed">[TBD: 워크샵 소개 문구를 작성해주세요.]</p>
   </section>
 
-  <section id="submission">
-    <h2>초록 제출</h2>
-    <p><strong>제출 마감: 2026년 12월 20일</strong></p>
-    <p>[TBD: 초록 제출 방법 및 양식 링크를 추가해주세요.]</p>
+  <section class="grid sm:grid-cols-3 gap-6 pb-16">
+
+    <div id="submission" class="rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-6">
+      <div class="text-3xl mb-3">📝</div>
+      <h2 class="text-lg font-bold text-indigo-700">초록 제출</h2>
+      <p class="mt-1 inline-block text-xs font-semibold text-white bg-indigo-600 rounded-full px-2 py-1">마감 2026.12.20</p>
+      <p class="mt-3 text-sm text-gray-600">[TBD: 초록 제출 방법 및 양식 링크를 추가해주세요.]</p>
+    </div>
+
+    <div id="registration" class="rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-6">
+      <div class="text-3xl mb-3">✅</div>
+      <h2 class="text-lg font-bold text-indigo-700">등록</h2>
+      <p class="mt-1 inline-block text-xs font-semibold text-white bg-indigo-600 rounded-full px-2 py-1">마감 2026.12.10</p>
+      <p class="mt-3 text-sm text-gray-600">[TBD: 등록 방법 및 링크를 추가해주세요.]</p>
+    </div>
+
+    <div id="venue" class="rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow p-6">
+      <div class="text-3xl mb-3">📍</div>
+      <h2 class="text-lg font-bold text-indigo-700">장소</h2>
+      <p class="mt-3 text-sm text-gray-600">[TBD: 장소 정보를 추가해주세요.]</p>
+    </div>
+
   </section>
 
-  <section id="registration">
-    <h2>등록</h2>
-    <p><strong>등록 마감: 2026년 12월 10일</strong></p>
-    <p>[TBD: 등록 방법 및 링크를 추가해주세요.]</p>
-  </section>
-
-  <section id="venue">
-    <h2>장소</h2>
-    <p>[TBD: 장소 정보를 추가해주세요.]</p>
-  </section>
-
-  <section id="gallery">
-    <h2>사진</h2>
-    <p>[TBD: 사진 갤러리가 준비되면 이곳에 추가됩니다.]</p>
-    <div class="gallery-grid">
-      <!-- <img src="images/photo1.jpg" alt=""> -->
+  <section id="gallery" class="py-16 border-t border-gray-200">
+    <h2 class="text-2xl font-bold text-indigo-700 mb-4">사진</h2>
+    <p class="text-gray-700">[TBD: 사진 갤러리가 준비되면 이곳에 추가됩니다.]</p>
+    <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <!-- <img src="images/photo1.jpg" class="rounded-lg w-full aspect-square object-cover" alt=""> -->
     </div>
   </section>
 
 </main>
 
-<footer>
+<footer class="text-center text-sm text-gray-400 py-10">
   <p>&copy; 2027 한국뇌신경과학회 고등인지분과</p>
 </footer>
 
