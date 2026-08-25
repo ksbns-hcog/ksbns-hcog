@@ -11,13 +11,23 @@ archive hub linking to each year.
 
 ```
 index.html          — archive hub (links to each year)
-2027/
-  index.html         — 2027 workshop homepage
-  style.css           — 2027-only styling
-  images/              — 2027-only images
-2026/                — added when 2026 content is provided
-2024/                — added when 2024 content is provided
+2027/                — upcoming winter workshop (content in progress)
+2026/                — 2026 winter workshop (past, archived from PDFs)
+2024/                — 2024 summer workshop "Neurosplash" (past, archived from PDFs)
+2023/                — 2023 summer workshop "Neurosplash" (past, archived from PDFs)
+  index.html
+  style.css
+  program*.pdf / abstract_booklet.pdf  — canonical source PDFs for that year
 ```
+
+"Neurosplash" is the historical banner/brand name this workshop series used
+on promotional materials (2023–2026); it is not a separate event.
+
+Each past year's page was built from the organizers' own program/abstract
+PDFs (originally dropped in the repo root, then copied into that year's
+folder under clean filenames). Facts not stated in the source PDFs (e.g. an
+unnamed invited speaker) were left out rather than guessed — check the PDFs
+directly if something needs filling in.
 
 **Each year folder is independent.** A year's `index.html` only ever
 references files inside its own folder using relative paths (e.g.
