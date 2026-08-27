@@ -16,10 +16,6 @@ When adding a new year: copy an existing year's folder as a starting point, keep
 
 Plain HTML, no build step. Styling is Tailwind CSS via the **Play CDN** (`<script src="https://cdn.tailwindcss.com">`) — style with utility classes directly on elements, don't write separate CSS rules or introduce a build pipeline. Play CDN is prototype-grade; that's an accepted tradeoff for this low-traffic site.
 
-## PDF access gate
-
-The repo is a **public** GitHub repo, so files (including PDFs) are always fetchable directly by URL regardless of any client-side gating — this is a deterrent for casual visitors, not real access control. Program/abstract PDF links (`class="pdf-gate"`) are intercepted by an inline `<script>` at the bottom of each year's `index.html` that `prompt()`s for a password before `window.open`-ing the real `href`. Password convention: `neurosplash20XX` (XX = that year's 2-digit year), stored in plaintext as `PDF_PASSWORD` in that year's script block — different password per year. When adding a new year's PDFs, copy this pattern and use that year's password.
-
 ## Content accuracy
 
 Past years' pages are built from the organizers' own program/abstract PDFs (kept in each year's folder as the canonical source). If a fact isn't in the source PDF (e.g. an unnamed speaker), leave it out rather than guessing — check the PDF directly.
