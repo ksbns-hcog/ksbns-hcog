@@ -47,6 +47,7 @@
     <a href="#overview" class="text-gray-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-full px-3 py-1.5 transition-colors">개요</a>
     <a href="#schedule" class="text-gray-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-full px-3 py-1.5 transition-colors">일정</a>
     <a href="#materials" class="text-gray-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-full px-3 py-1.5 transition-colors">자료</a>
+    <a href="#abstracts" class="text-gray-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-full px-3 py-1.5 transition-colors">초록</a>
     <a href="#gallery" class="text-gray-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-full px-3 py-1.5 transition-colors">사진</a>
     <a href="../" class="text-indigo-600 font-semibold hover:bg-indigo-50 rounded-full px-3 py-1.5 transition-colors">&larr; 아카이브</a>
   </div>
@@ -95,22 +96,403 @@
     </ol>
   </section>
 
-  <section class="grid sm:grid-cols-2 gap-6 pb-16" id="materials">
+  <section class="pb-16" id="materials">
 
-    <div class="reveal rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all p-6">
+    <div class="reveal rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all p-6 max-w-sm">
       <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-2xl mb-4">📄</div>
       <h2 class="text-lg font-bold text-indigo-700">참가 안내</h2>
       <p class="mt-3 text-sm text-gray-600 mb-4">일정, 장소, 참가 안내 자료입니다.</p>
       <a href="program_guide.pdf" target="_blank" class="pdf-gate inline-block text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-full px-4 py-2 transition-colors">PDF 다운로드</a>
     </div>
 
-    <div class="reveal rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all p-6">
-      <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-2xl mb-4">📚</div>
-      <h2 class="text-lg font-bold text-indigo-700">초록집</h2>
-      <p class="mt-3 text-sm text-gray-600 mb-4">포스터 발표 초록이 담긴 자료집입니다.</p>
-      <a href="abstract_booklet.pdf" target="_blank" class="pdf-gate inline-block text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-full px-4 py-2 transition-colors">PDF 다운로드</a>
-    </div>
+  </section>
 
+  <section id="abstracts" class="reveal py-16 border-t border-gray-200">
+    <h2 class="text-2xl font-bold text-indigo-700 mb-4">초록</h2>
+    <div class="flex flex-wrap gap-3 mb-6">
+      <div class="rounded-xl bg-indigo-50 px-4 py-3">
+        <p class="text-2xl font-black text-indigo-700">72</p>
+        <p class="text-xs text-gray-600">총 포스터</p>
+      </div>
+      <div class="rounded-xl bg-indigo-50 px-4 py-3">
+        <p class="text-2xl font-black text-indigo-700">25</p>
+        <p class="text-xs text-gray-600">총 랩실 (마지막 저자 기준)</p>
+      </div>
+    </div>
+    <p class="text-xs text-gray-400 mb-4">* 69번은 중복 제출로 확인되어 제외했습니다 (원본 번호 체계 유지).</p>
+    <div class="overflow-x-auto max-h-[32rem] overflow-y-auto border border-gray-200 rounded-xl">
+      <table class="w-full text-left border-collapse">
+        <thead class="sticky top-0 bg-white">
+          <tr class="border-b border-gray-200">
+            <th class="px-3 py-2 text-xs font-semibold text-gray-500 w-12">No.</th>
+            <th class="px-3 py-2 text-xs font-semibold text-gray-500">제목</th>
+            <th class="px-3 py-2 text-xs font-semibold text-gray-500">저자</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">1</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">A brain-wide investigation of the neural substrates of associative learning</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Seungyub Lee, Geun Ho Im, Seong-Gi Kim, HyungGoo R. Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">2</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Diversity of lateral habenula neurons in reward and aversive processing</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jongwon Yun, HyungGoo R. Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">3</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Dopaminergic computation of positional and rotational proximity</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Rin Wang, Seungyub Lee, Jongwon Yun, Hoyeon Jang, HyungGoo R. Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">4</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Temporal credit assignment in alcohol use disorder</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jiwon Park, Manjae Kwan, Young-Chul Jung, Dongil Chung</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">5</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Differential Reactivation of Task-related Firing Patterns of Place Cells between the Subiculum and CA1 in a Visual Scene Memory Task</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jae-Min Seol, Su-Min Lee, Inah Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">6</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neuropsychosocial Measures Linked to Problematic Gaming Cross-Sectionally and Longitudinally in Developing Youth</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Suyeon Song, Marc Potenza, Woo-Young Ahn</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">7</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Processing temporal information during enjoyable experiences</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Hee-Dong Yoon, Hyeon-Ae Jeon</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">8</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Contextual Information Enhances Attentive States to Mitigate Temporal Bias in Time Estimation</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jungtak Park, Hyeon-Ae Jeon</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">9</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Sequential Rule Generalization through Reinforcement Learning</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Taehyun Yoo, Hyeon-Ae Jeon</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">10</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neural mechanisms underlying value normalization adaptive to changes in choice-relevant information</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">MinHo Hwang, Dongil Chung</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">11</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">The cortical contribution to individual difference in emotional valence processing</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jaewoong Hwang, ChiHye Chung</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">12</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">The Implicit Dynamics of Hierarchical Sequence Learning</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Minho Shin, Hyeon-Ae Jeon</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">13</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neural basis establishing the competition-driven social hierarchy</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Minsung Sim, Hyogyun kim, ChiHye Chung</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">14</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Encoding of task event boundaries by subicular neurons in virtual environments</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Su-Min Lee, Inah Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">15</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Inactivation of the intermediate hippocampus differentially affects the prelimbic and infralimbic cortex virtual context working memory</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Hee-Seung Ha, Eun-Hye Park, Inah Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">16</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neural Correlates of Risk and Reward Signals in Smokers Using an MRI-Compatible Vaping Device: A Preliminary Study</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Eunhwi Lee, Jeung-Hyun Lee, Joshua W. Brown, Woo-Young Ahn</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">17</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Differential Contributions of Human Hippocampal Subregions to Object-in-Context Memory at Different Learning Stages</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Sorin Jeong, Ji Yeon Kim, Jae-Min Seol, Ji Sun Kim, Sang Ah Lee, Inah Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">18</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Coordinated Computations for Naturalistic Memory Encoding and Retrieval in Hippocampal Neural Subspaces</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Dasom Kwon, Jungwoo Kim, Seng Bum Michael Yoo, Won Mok Shim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">19</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Decision-making for others' time and money</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Sunmin Kim, Dongil Chung</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">20</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neural Processes Linking Interoception to Moral Preferences Aligned with Group Consensus</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">JuYoung Kim, Minyoung Kim, Daon Lee, Hackjin Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">21</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">The sex specific impact of metabolomic reprogramming in depression</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jimin Nam, ChiHye Chung</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">22</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Effects of uncontrollable stress on an association of a conditioned stimulus with the absence of the unconditioned stimulus</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Nam-Heon Kim, Su-Yeon Sim, Jung-Soo Han</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">23</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Effect of blocking entorhinal cortical dopamine receptors on value-dependent conditioned responses</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jaehun Kim, Minyeong Seo, Min Whan Jung</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">24</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neural mechanisms of allocentric spatial representation using visual landmarks in the hippocampus</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Eunho Lee, Inah Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">25</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Threat-dependent defensive behavior mediated by CGRP neurons in parabrachial nucleus</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Byung Min Chung, Gyeong Hee Pyeon, June-Seek Choi, Yong Sang Jo</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">26</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Consistency of EEG Microstate among Various Contexts</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jiyeon Jeong, Jayoon Choi, Minjae Jo, Min-Suk Kang</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">27</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Distractor control modulates theta-band power</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Hansol Lee, Sun-Young Park, Hyungjin Hwang, Min-Suk Kang</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">28</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Balance of innovation and imitation for sociocultural evolution</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Seungdae Baek, Hyeonsu Lee, Minsoo Kang, Se-Bum Paik</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">29</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Stable receptive field in the early visual pathway for domain-general object recognition</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Minjun Kang, Seungdae Baek, Se-Bum Paik</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">30</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Emergence of acoustic functional maps from neuronal interference in auditory cortex</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jeonghwan Cheon, Se-Bum Paik</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">31</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Heroes and villains: Opposing narrative roles engage neural synchronization in the inferior frontal gyrus</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Hayoung Ryu, Minue Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">32</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Amygdala Response in Koreans to Surprised Facial Expressions</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Seohyeon Lee, Minue Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">33</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neural coding hierarchy of summary statistics and categories across mouse primary visual and posterior parietal cortices</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Young-Beom Lee, Gaeun Jung, Oliver James, Doyun Lee, Yee-Joon Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">34</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Dynamic representation of spatial and non-spatial information by single units in the primate hippocampus during contextual object discrimination</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Seukhwan Shin, Jae-Min Seol, Bona Lee, Choong-Hee Lee, Su-Min Lee, Heung-Yeol Lim, Yuji Naya, Joonyeol Lee, Inah Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">35</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Disentangling Pain Factors: Neural Insights via Variational Autoencoder</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jihoon Han, Sungwoo Lee, Dong Hee Lee, Choong-Wan Woo</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">36</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Negativity bias in the retrieval of context-emotion associations in depression</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Minsok Koo, Sang Ah Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">37</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Separate effects of emotional valence and semantic informativeness on emotional episodic memory</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Hye Bin Yoo, Seongyoon Yang, Sang Ah Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">38</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neural dynamics of context transitions in spontaneous thoughts</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Kwon Heo, Dasom Kwon, Won Mok Shim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">39</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Do Social Preferences Depend on Context? Children's Probabilistic Social Decision-Making Based on Affiliation and Dominance</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Gakyung Kim, Jeongyeon Shin, Woo-Young Ahn, Sang Ah Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">40</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Investigation of context-dependent decision making along the olfactory pathway</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jongrok Do, Doyun Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">41</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Hippocampal Correlates of Individual Differences in Temporal Episodic Memory in Aging</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Maria Jieun Hwang, Sang-Eon Park, Sang Ah Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">42</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Value and spatial signal processing in the rodent granular retrosplenial cortex</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Daeul Kong, Eun Ju Shin, Min Whan Jung</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">43</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neural Mechanisms Linking Temporal and Directional Predictions in Sensory-Motor Behaviors</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Sanghum Woo, Sua Bae, Jeongwon Kim, Geonwoo Kim, Yechan Hwa, Joonyeol Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">44</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">The Double-Edged Sword of Event Segmentation in Children's Memory</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Yu Jin Rah, Sang Ah Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">45</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neurobehavioral impacts of a social observer on risky decision-making in cigarette smokers</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">HeeYoung Seon, Cheolin Yoo, Dongil Chung</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">46</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Enhanced Performance of Predictive Models in Within and Between-Person Pain using Multi-echo fMRI</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Suhwan Gim, Eui-Jin Jung, Dong Hee Lee, Jae-Joong Lee, Choong-Wan Woo</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">47</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Dynamic Pain Regulatioon: From Onset to Recovery</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Yuseon Park, Jung-woo Kim, Eunjin Lee, Choong-Wan Woo</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">48</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neural Mechanisms of Music-Induced Analgesic Effect using Personally Pleasant Music</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Eui-Jin Jung, Elise Desbarats, Mathieu Roy, Choong-Wan Woo</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">49</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Context-dependent influence of CRH neurons in the paraventricular nucleus of the hypothalamus on active avoidance behavior</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Hayeon Lee, Han Eul, June-Seek Choi, Yong Sang Jo</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">50</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neural Signatures of Individual Differences in the Influence of Interoceptive Signals on Preference Decisions</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Yuri Kim, Jinhee Kim, Hackjin Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">51</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Effects of Ketamine treatment on the uncontrollable stress-induced memory impairments</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Sang-Pil Park, Jung-Soo Han</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">52</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Neural representations in MPFC and insula encode individual differences in estimating others' preferences</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Hyeran Kang, Kun Il Kim, Jinhee Kim, Hackjin Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">53</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Effect of physical effort on dopamine activities in the ventral and dorsal striatums</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">JiHwan Kim, Jaebin Yoon, Hoyeon Jang, HyungGoo R. Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">54</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">A derivative-like dopaminergic computation across valences</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Mijoo Park, Jongwon Yun, Hogyu Choi, HyungGoo R. Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">55</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">From vision to action during closed-loop naturalistic interaction: Spatially specific reward signals in visual areas and their behavioral impact</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Royoung Kim, Jiwoong Park, Kendrick Kay, Won Mok Shim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">56</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Value representation in striatum-projecting PPC neurons</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Sangwoo Kim, Jiwon Yoon, Eun Ju Shin, Min Whan Jung, Seung-Hee Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">57</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">The role of CGRP neurons in suppressing addictive behavior</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jihyun Lee, Gyeong Hee Pyeon, June-Seek Choi, Yong Sang Jo</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">58</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Modulation of inequity aversion through social hierarchy in mouse model</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Yujeong Jeong, Sukwoon Song, Jihyun Noh, Jeongyeon Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">59</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Shared memory representations in real-world social interactions</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jiun Choi, Jiwoong Park, Won Mok Shim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">60</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Dysfunction of the primary visual cortex leads to visual impairments in a Grin2b-mutant mouse model of autism</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jong-Yeon Yoo, Ilsong Choi, Eunjoon Kim, Seung-Hee Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">61</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Suppression of Risky Foraging Behavior Requires Increased Central Amygdala Activity at Discrete Time Points</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jaeyong Lee, June-Seek Choi</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">62</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Weakening of cortical connectivity and multisensory integration in the Shank3Δ14–16 mice</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Seung-Mi Oh, You-Hyang Song, Hae-Yong Park, Jun-Ho Song, Eunjoon Kim, Se-Bum Paik, Seung-Hee Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">63</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Plcg1 dependent neural plasticity is required for dynamic hippocampal CA2 network processing social memory in mice</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Sukwoon Song, Dongwoo Nam, Jeongyeon Kim</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">64</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Chemogenetic activation of the lateral habenula facilitates the association of CS with the absence of the US in Pavlovian appetitive conditioning</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">In-Beom Jin, Jung-Soo Han</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">65</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Egocentric spatial information decoding by population activity in the mouse retrosplenial cortex</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Daehyun Oh, Yoonsoo Yeo, Jeehyun Kwag</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">66</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Roles of retrosplenial parvalbumin-positive interneurons in the neural representation of environmental geometry</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jiyeon Yang, Jeehyun Kwag</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">67</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Impaired Egocentric Neural Encoding of Environmental Geometry in the Retrosplenial Cortex in the 5XFAD Mouse Model of Alzheimer's Disease</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Yoonsoo Yeo, Jeehyun Kwag</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">68</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Effect of motion speed expectation on visually guided oculomotor behavior</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jaeseong Yoon, Jinsung Park, Joonyeol Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">70</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">To Entanglement and Beyond: Explaining Superior Generalizability of Quantum Neural Networks</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Junghoon Park</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">71</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Inhibitory Input Modulation in a Spiking Neural Network Model Explains How Prediction Modifies Motion Direction Information in the Visual Cortex</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Jungryul Ahn, Seolmin Kim, Joonyeol Lee</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">72</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Improving fMRI language encoding models using multimodality and deep learning</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Danny Han, Yunju Cho, Seongju Lee, ByungJu Kim, Jay-Yoon Lee, Jiook Cha</td>
+      </tr>
+      <tr class="even:bg-gray-50">
+        <td class="px-3 py-2 text-sm text-gray-500 align-top">73</td>
+        <td class="px-3 py-2 text-sm text-gray-800 align-top">Layer-specific processing of apparent motion perception in macaque primary visual cortex</td>
+        <td class="px-3 py-2 text-sm text-gray-600 align-top">Hyeji Kim, Joonyeol Lee</td>
+      </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <section id="gallery" class="reveal py-16 border-t border-gray-200">
@@ -154,6 +536,13 @@
   <p>&copy; 2024 한국뇌신경과학회 고등인지분과</p>
 </footer>
 
+<div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 p-4">
+  <button id="lightbox-close" class="absolute top-4 right-4 text-white text-3xl leading-none hover:text-gray-300" aria-label="닫기">&times;</button>
+  <button id="lightbox-prev" class="absolute left-2 sm:left-6 text-white text-4xl leading-none hover:text-gray-300 px-2 py-4" aria-label="이전 사진">&larr;</button>
+  <img id="lightbox-img" src="" alt="" class="max-w-full max-h-full object-contain rounded-lg">
+  <button id="lightbox-next" class="absolute right-2 sm:right-6 text-white text-4xl leading-none hover:text-gray-300 px-2 py-4" aria-label="다음 사진">&rarr;</button>
+</div>
+
 <script>
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
@@ -181,6 +570,49 @@
           alert('비밀번호가 올바르지 않습니다.');
         }
       });
+    });
+  })();
+</script>
+
+<script>
+  (function() {
+    const links = Array.from(document.querySelectorAll('#gallery a.group'));
+    if (links.length === 0) return;
+    const photos = links.map(a => a.getAttribute('href'));
+    const lightbox = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    let current = 0;
+
+    function show(index) {
+      current = (index + photos.length) % photos.length;
+      img.src = photos[current];
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+    }
+    function close() {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      img.src = '';
+    }
+
+    links.forEach(function(a, i) {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        show(i);
+      });
+    });
+
+    document.getElementById('lightbox-close').addEventListener('click', close);
+    document.getElementById('lightbox-prev').addEventListener('click', function() { show(current - 1); });
+    document.getElementById('lightbox-next').addEventListener('click', function() { show(current + 1); });
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) close();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (lightbox.classList.contains('hidden')) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') show(current - 1);
+      else if (e.key === 'ArrowRight') show(current + 1);
     });
   })();
 </script>

@@ -114,6 +114,13 @@
   <p>&copy; 2027 한국뇌신경과학회 고등인지분과</p>
 </footer>
 
+<div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 p-4">
+  <button id="lightbox-close" class="absolute top-4 right-4 text-white text-3xl leading-none hover:text-gray-300" aria-label="닫기">&times;</button>
+  <button id="lightbox-prev" class="absolute left-2 sm:left-6 text-white text-4xl leading-none hover:text-gray-300 px-2 py-4" aria-label="이전 사진">&larr;</button>
+  <img id="lightbox-img" src="" alt="" class="max-w-full max-h-full object-contain rounded-lg">
+  <button id="lightbox-next" class="absolute right-2 sm:right-6 text-white text-4xl leading-none hover:text-gray-300 px-2 py-4" aria-label="다음 사진">&rarr;</button>
+</div>
+
 <script>
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
@@ -125,6 +132,49 @@
     });
   }, { threshold: 0.1 });
   revealEls.forEach(el => io.observe(el));
+</script>
+
+<script>
+  (function() {
+    const links = Array.from(document.querySelectorAll('#gallery a.group'));
+    if (links.length === 0) return;
+    const photos = links.map(a => a.getAttribute('href'));
+    const lightbox = document.getElementById('lightbox');
+    const img = document.getElementById('lightbox-img');
+    let current = 0;
+
+    function show(index) {
+      current = (index + photos.length) % photos.length;
+      img.src = photos[current];
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+    }
+    function close() {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      img.src = '';
+    }
+
+    links.forEach(function(a, i) {
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        show(i);
+      });
+    });
+
+    document.getElementById('lightbox-close').addEventListener('click', close);
+    document.getElementById('lightbox-prev').addEventListener('click', function() { show(current - 1); });
+    document.getElementById('lightbox-next').addEventListener('click', function() { show(current + 1); });
+    lightbox.addEventListener('click', function(e) {
+      if (e.target === lightbox) close();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (lightbox.classList.contains('hidden')) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') show(current - 1);
+      else if (e.key === 'ArrowRight') show(current + 1);
+    });
+  })();
 </script>
 
 </body>
