@@ -106,14 +106,14 @@
       <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-2xl mb-4">📄</div>
       <h2 class="text-lg font-bold text-indigo-700">프로그램 안내</h2>
       <p class="mt-3 text-sm text-gray-600 mb-4">일정, 장소, 참가 안내가 담긴 최종 안내문입니다.</p>
-      <a href="program_guide.pdf" target="_blank" class="inline-block text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-full px-4 py-2 transition-colors">PDF 다운로드</a>
+      <a href="program_guide.pdf" target="_blank" class="pdf-gate inline-block text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-full px-4 py-2 transition-colors">PDF 다운로드</a>
     </div>
 
     <div class="reveal rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all p-6">
       <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-2xl mb-4">📚</div>
       <h2 class="text-lg font-bold text-indigo-700">프로그램북</h2>
       <p class="mt-3 text-sm text-gray-600 mb-4">포스터 초록이 포함된 전체 프로그램북입니다.</p>
-      <a href="program_book.pdf" target="_blank" class="inline-block text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-full px-4 py-2 transition-colors">PDF 다운로드</a>
+      <a href="program_book.pdf" target="_blank" class="pdf-gate inline-block text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 rounded-full px-4 py-2 transition-colors">PDF 다운로드</a>
     </div>
 
     <div id="gallery" class="reveal rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all p-6">
@@ -148,6 +148,24 @@
     });
   }, { threshold: 0.1 });
   revealEls.forEach(el => io.observe(el));
+</script>
+
+<script>
+  (function() {
+    const PDF_PASSWORD = 'neurosplash2023';
+    document.querySelectorAll('a.pdf-gate').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const input = prompt('초록집/프로그램 PDF는 등록 참가자만 열람 가능합니다.\n비밀번호를 입력하세요:');
+        if (input === null) return;
+        if (input === PDF_PASSWORD) {
+          window.open(link.href, '_blank');
+        } else {
+          alert('비밀번호가 올바르지 않습니다.');
+        }
+      });
+    });
+  })();
 </script>
 
 </body>
