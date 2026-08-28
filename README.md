@@ -4,6 +4,13 @@ Each year's workshop has its own fully self-contained homepage in a
 year-named folder (`2027/`, `2026/`, ...). The root `index.html` is just an
 archive hub linking to each year.
 
+## TODO
+
+Delete item once it is done.
+- 연도별 개최내역을 정리한 내용이 있어 보내드립니다. 필요한 정보를 골라 사용하시고, 추가로 더 필요한 정보가 있다면 알려주세요.
+- 위(banner)에 예쁜 brain related background 이미지
+- 페이지 맨 아래나 맨 위 (혹은 옆에 컬럼으로?) 후원사들의 로고들을 쭉 깔아
+
 ## Structure
 
 ```
