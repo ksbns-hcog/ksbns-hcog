@@ -16,6 +16,10 @@ When adding a new year: copy an existing year's folder as a starting point, keep
 
 Plain HTML, no build step. Styling is Tailwind CSS via the **Play CDN** (`<script src="https://cdn.tailwindcss.com">`) — style with utility classes directly on elements, don't write separate CSS rules or introduce a build pipeline. Play CDN is prototype-grade; that's an accepted tradeoff for this low-traffic site.
 
+## Sponsor/host logos
+
+When a year's page needs a sponsor or host organization's logo, first check whether that same company/org already has a logo file in another year's `sponsors/` or `hosts/` folder — if so, **copy that existing file** into the current year's own `sponsors/`/`hosts/` folder (never reference another year's folder directly; see year-folder independence above) instead of searching the web and re-downloading it. Only search/download when no prior year has that logo yet. Link each logo to the org's official site with `target="sponsor_window" rel="noopener"` so repeated clicks reuse one shared tab.
+
 ## Content accuracy
 
 Past years' pages are built from the organizers' own program/abstract PDFs (kept in each year's folder as the canonical source). If a fact isn't in the source PDF (e.g. an unnamed speaker), leave it out rather than guessing — check the PDF directly.
