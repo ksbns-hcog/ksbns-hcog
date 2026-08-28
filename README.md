@@ -1,4 +1,4 @@
-# 한국뇌신경과학회 고등인지분과 워크샵 아카이브
+# 한국뇌신경과학회 고등인지분과
 
 Each year's workshop has its own fully self-contained homepage in a
 year-named folder (`2027/`, `2026/`, ...). The root `index.html` is just an
